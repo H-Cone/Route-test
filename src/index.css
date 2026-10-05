@@ -1,0 +1,527 @@
+.sideBar{
+    width: 260px;
+    height: 100vh;
+    background-color: #111c35;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    font-size: 25px;
+    margin-bottom: 35px;
+    padding: 10px 0px;
+}
+
+.sidebarNav{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.navlink{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px;
+    color: #e2e8f0;
+    border-radius: 10px;
+    transition:  0.2s ease;
+}
+
+.navlink:hover{
+    background-color: #263653;
+    color: white;
+}
+
+.navlink.active{
+    background-color: #263653;
+    color: white;
+}
+
+.navlink i {
+    font-size: 20px;
+}
+
+.logout-btn {
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+}
+
+.logout{
+    margin-top: auto;
+    border-top: 1px solid #334155;
+}
+
+/* SignUp/Signin */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f5f9;
+    padding: 20px;
+    height: 100vh;
+}
+
+.containerForm {
+    width: 100%;
+    max-width: 480px;
+    padding: 35px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(17, 28, 53, 0.08);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.nameContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.nameContainer div{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerForm h1{
+    color: #111c35;
+    margin: 0;
+}
+
+.containerForm p{
+    color: #64748b;
+}
+
+.containerForm input{
+    padding: 5px 10px 5px 8px;
+    margin-bottom: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+.containerForm input:focus {
+    border-color: #2563eb;
+}
+
+.containerForm label{
+    font-weight: 500;
+}
+
+.containerForm button{
+    background-color: #2563eb;
+    border: none;
+    padding: 12px 5px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.containerForm button:hover{
+    transform: scale(.9);
+    background-color: hsl(221, 83%, 35%);
+}
+
+.link{
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .2s ease;
+}
+
+.link:hover{
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* DASHBOARD */
+
+.dashboard-page {
+  background: #f1f5f9;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* Welcome */
+
+    .welcome {
+    margin-bottom: 30px;
+    }
+
+    .welcome h1 {
+    color: #111c35;
+    margin-bottom: 5px;
+    }
+
+    .welcome p {
+    color: #64748b;
+    }
+
+
+    /* Statistics */
+
+    .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    }
+
+    .stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    }
+
+    .stat-card h3 {
+    color: #64748b;
+    font-size: 15px;
+    margin-bottom: 10px;
+    }
+
+    .stat-card h2 {
+    color: #111c35;
+    font-size: 28px;
+    margin: 0;
+    }
+
+    .stat-card p {
+    color: #94a3b8;
+    font-size: 13px;
+    }
+
+
+    /* Bottom sections */
+
+    .dashboard-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    }
+
+    .courses-section,
+    .upcoming-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    }
+
+    .courses-section h2,
+    .upcoming-section h2 {
+    color: #111c35;
+    margin-bottom: 20px;
+    }
+
+    .course {
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+    }
+
+    .course span {
+    color: #2563eb;
+    font-weight: 600;
+    }
+
+    .course p {
+    color: #64748b;
+    margin: 5px 0 0;
+    }
+
+    .upcoming {
+    padding: 15px 0;
+    border-bottom: 1px solid #e2e8f0;
+    }
+
+    .upcoming h4 {
+    color: #111c35;
+    margin: 0;
+    }
+
+    .upcoming p {
+    color: #64748b;
+    font-size: 14px;
+    }
+
+
+    /* Profile */
+    .profile-page {
+    background: #f1f5f9;
+    min-height: 100vh;
+    padding: 30px;
+    }
+
+    .profile-header {
+    margin-bottom: 30px;
+    }
+
+    .profile-header h1 {
+    color: #111c35;
+    margin-bottom: 5px;
+    }
+
+    .profile-header p {
+    color: #64748b;
+    }
+
+    .profile-card {
+    background: white;
+    max-width: 900px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 30px;
+    }
+
+    .profile-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e2e8f0;
+    }
+
+    .profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    font-weight: bold;
+    }
+
+    .profile-top h2 {
+    color: #111c35;
+    margin: 0 0 5px;
+    }
+
+    .profile-top p {
+    color: #64748b;
+    margin: 0;
+    }
+
+    .profile-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    }
+
+    .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    }
+
+    .detail span {
+    color: #64748b;
+    font-size: 14px;
+    }
+
+    .detail strong {
+    color: #111c35;
+    }
+
+/* Courses */
+
+    .courses-page {
+    background: #f1f5f9;
+    min-height: 100vh;
+    padding: 30px;
+    }
+
+    .courses-header {
+    margin-bottom: 30px;
+    }
+
+    .courses-header h1 {
+    color: #111c35;
+    margin-bottom: 5px;
+    }
+
+    .courses-header p {
+    color: #64748b;
+    }
+
+    /* Courses */
+
+    .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    }
+
+    .course-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    }
+
+    .course-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+
+    .course-code {
+    color: #2563eb;
+    font-weight: 700;
+    }
+
+    .course-unit {
+    color: #64748b;
+    font-size: 14px;
+    }
+
+    .course-card h2 {
+    color: #111c35;
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+
+    .lecturer {
+    color: #64748b;
+    margin-bottom: 25px;
+    }
+
+    /* Progress */
+
+    .progress-info {
+    display: flex;
+    justify-content: space-between;
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 8px;
+    }
+
+    .progress-bar {
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+
+    .progress {
+    height: 100%;
+    background: #2563eb;
+    border-radius: 10px;
+    }
+
+    /* Results */
+    .results-page {
+    background: #f1f5f9;
+    min-height: 100vh;
+    padding: 30px;
+    }
+
+    .results-header {
+    margin-bottom: 30px;
+    }
+
+    .results-header h1 {
+    color: #111c35;
+    margin-bottom: 5px;
+    }
+
+    .results-header p {
+    color: #64748b;
+    }
+
+
+    /* Summary cards */
+
+    .result-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    }
+
+    .result-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    }
+
+    .result-card span {
+    color: #64748b;
+    font-size: 14px;
+    }
+
+    .result-card h2 {
+    color: #111c35;
+    margin-top: 10px;
+    }
+
+
+    /* Table */
+
+    .results-table-container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    overflow-x: auto;
+    }
+
+    .results-table-container h2 {
+    color: #111c35;
+    margin-bottom: 20px;
+    }
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    }
+
+    th {
+    text-align: left;
+    padding: 15px;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 14px;
+    }
+
+    td {
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    }
+
+    td:first-child {
+    color: #2563eb;
+    font-weight: 600;
+    }
+
+
+    /* Grade */
+
+    .grade {
+    background: #dbeafe;
+    color: #2563eb;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    }
